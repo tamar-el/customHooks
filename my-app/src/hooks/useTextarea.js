@@ -1,11 +1,21 @@
-
-// exe 1 - useTextarea
+// exe 5 - useInput
 import { useState } from "react";
 
-function useTextarea() {
+function useTextarea(initial) {
+    const [value, setValue] = useState(initial);
 
-    return { value, toggle, setTrue, setFalse };
+    const onChange = (e) => {
+        setValue(e.target.value);
+    };
+
+    const reset = () => {
+        setValue(initial);
+    };
+
+    return { value, onChange, setValue, reset };
 }
 
 export default useTextarea;
+
+
 

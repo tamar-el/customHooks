@@ -1,10 +1,24 @@
 
-// exe 1 - useCounterWithStep
+// exe 3 - useCounterWithStep
 import { useState } from "react";
 
-function useCounterWithStep() {
+function useCounterWithStep(initial,step=2) {
+     const [value, setValue] = useState(initial);
 
-    return { value, toggle, setTrue, setFalse };
+    const inc = () => {
+        setValue(prev => prev+step);
+    };
+
+    const dec = () => {
+        setValue(prev => prev-step);
+    };
+
+    const reset  = () => {
+        setValue(initial);
+    };
+
+
+    return { value, inc, dec, reset };
 }
 
 export default useCounterWithStep;

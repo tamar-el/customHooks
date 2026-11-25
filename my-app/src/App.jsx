@@ -5,13 +5,18 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import Toggle from './components/Toggle.jsx'
 import Counter from './components/Counter.jsx'
+import CounterWithStep from './components/CounterWithStep.jsx'
+import Input from './components/Input.jsx'
+import TextareaDemo from './components/TextareaDemo.jsx'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Toggle></Toggle>
       <Counter></Counter>
+      <CounterWithStep></CounterWithStep>
+      <Input></Input>
+      <TextareaDemo></TextareaDemo>
     </>
   )
 }
