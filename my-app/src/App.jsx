@@ -10,6 +10,7 @@ import Input from './components/Input.jsx'
 import TextareaDemo from './components/TextareaDemo.jsx'
 import Previous from './components/Previous.jsx'
 import Interval from './components/Interval.jsx'
+import Timeout from './components/Timeout.jsx'
 function App() {
 
   return (
@@ -21,6 +22,7 @@ function App() {
       <TextareaDemo></TextareaDemo>
       <Previous></Previous>
       <Interval></Interval>
+      <Timeout></Timeout>
     </>
   )
 }
