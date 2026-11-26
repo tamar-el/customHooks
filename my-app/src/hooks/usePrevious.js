@@ -1,11 +1,16 @@
 
-// exe 1 - usePrevious
-import { useState } from "react";
+//  6 - usePrevious
 
-function usePrevious() {
+import { useEffect, useRef } from "react";
 
-    return { value, toggle, setTrue, setFalse };
+function usePrevious(value) {
+    const ref = useRef();
+
+    useEffect(() => {
+        ref.current = value;
+    }, [value]);
+
+    return ref.current;
 }
 
 export default usePrevious;
-

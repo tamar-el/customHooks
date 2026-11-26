@@ -8,6 +8,8 @@ import Counter from './components/Counter.jsx'
 import CounterWithStep from './components/CounterWithStep.jsx'
 import Input from './components/Input.jsx'
 import TextareaDemo from './components/TextareaDemo.jsx'
+import Previous from './components/Previous.jsx'
+import Interval from './components/Interval.jsx'
 function App() {
 
   return (
@@ -17,6 +19,8 @@ function App() {
       <CounterWithStep></CounterWithStep>
       <Input></Input>
       <TextareaDemo></TextareaDemo>
+      <Previous></Previous>
+      <Interval></Interval>
     </>
   )
 }
